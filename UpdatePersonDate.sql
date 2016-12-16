@@ -8,3 +8,5 @@ UPDATE Person SET fodelsedatum = ('1989-07-20 20:10:10') WHERE pid = 6;
 UPDATE Person SET fodelsedatum = ('1989-08-02 20:10:10') WHERE pid = 7;x
 UPDATE Person SET fodelsedatum = ('1989-10-10 20:10:10') WHERE pid = 8;
 
+
+
