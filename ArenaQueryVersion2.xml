@@ -1,0 +1,20 @@
+let $arena := (doc("project.xml")/Turneringar/Turnering/Arena)
+return
+<Resultat>{
+for $namn in distinct-values($arena/@namn)
+for $stad in distinct-values($arena[@namn = $namn]/@stad)
+order by $namn
+return <Arena stad="{$stad}" namn="{$namn}"/>
+}
+</Resultat>
+
+OUTPUT:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Resultat>
+   <Arena stad="Lund" namn="Camp Nou"/>
+   <Arena stad="Köpenhamn" namn="FNB"/>
+   <Arena stad="Stockholm" namn="Friends Arena"/>
+   <Arena stad="Manchester" namn="Olympiya"/>
+   <Arena stad="London" namn="Wembley"/>
+</Resultat>

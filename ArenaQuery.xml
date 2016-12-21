@@ -1,0 +1,18 @@
+let $arena := (doc("project.xml")/FotbollsTurnering/Arenor/Arena)
+return <Resultat> {
+for $x in $arena
+return $x
+}
+</Resultat>
+
+OUTPUT:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Resultat>
+   <Arena namn="Camp Nou" stad="Lund"/>
+   <Arena namn="FNB" stad="Köpenhamn"/>
+   <Arena namn="Wembley" stad="London"/>
+   <Arena namn="Olympiya" stad="Manchester"/>
+   <Arena namn="Friends Arena" stad="Stockholm"/>
+   <Arena namn="Hovet" stad="Johanneshov"/>
+</Resultat>

@@ -1,0 +1,54 @@
+let $turnering := (doc("project.xml")/Turneringar/Turnering)
+return
+<Resultat>{
+for $x in $turnering
+return $x
+}
+</Resultat>
+
+OUTPUT:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Resultat>
+   	<Turnering namn="Champions League">
+		      <Arena namn="Camp Nou" stad="Lund"/>
+		      <Lag namn="ERF"/>
+		      <Lag namn="JRT"/>
+		      <Lag namn="RTF"/>
+	</Turnering>
+  	<Turnering namn="TigerCupen">
+		      <Arena namn="Camp Nou" stad="Lund"/>
+		      <Arena namn="FNB" stad="Köpenhamn"/>
+		      <Lag namn="FFG"/>
+		      <Lag namn="RTF"/>
+		      <Lag namn="SSE"/>
+	</Turnering>
+   	<Turnering namn="FotbollsCupen">
+		      <Arena namn="Wembley" stad="London"/>
+		      <Arena namn="Olympiya" stad="Manchester"/>
+		      <Lag namn="ERF"/>
+		      <Lag namn="JRT"/>
+	</Turnering>
+   	<Turnering namn="KronborgCup">
+		      <Arena namn="Olympiya" stad="Manchester"/>
+		      <Arena namn="FNB" stad="Köpenhamn"/>
+		      <Lag namn="ERF"/>
+		      <Lag namn="JRT"/>
+		      <Lag namn="SSE"/>
+	</Turnering>
+   	<Turnering namn="LassaBollen">
+		      <Arena namn="Friends Arena" stad="Stockholm"/>
+		      <Arena namn="Wembley" stad="London"/>
+		      <Lag namn="FFG"/>
+		      <Lag namn="SSE"/>
+	</Turnering>
+   	<Turnering namn="TalangCupen">
+		      <Arena namn="FNB" stad="Köpenhamn"/>
+	</Turnering>
+   	<Turnering namn="JJCup">
+		      <Arena namn="Wembley" stad="London"/>
+	</Turnering>
+   	<Turnering namn="The Great League">
+		      <Arena namn="Wembley" stad="London"/>
+	</Turnering>
+</Resultat>

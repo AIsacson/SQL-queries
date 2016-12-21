@@ -1,0 +1,19 @@
+let $lag := (doc("project.xml")/Turneringar/Turnering/Lag)
+return
+<Resultat>{
+for $namn in distinct-values($lag/@namn)
+let $antal := count($lag[@namn = $namn])
+return <Lag namn="{$namn}" antalturneringar="{$antal}"/>
+}
+</Resultat>
+
+OUTPUT:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Resultat>
+   <Lag namn="Camp Nou" antalturneringar="2"/>
+   <Lag namn="FNB" antalturneringar="3"/>
+   <Lag namn="Wembley" antalturneringar="4"/>
+   <Lag namn="Olympiya" antalturneringar="2"/>
+   <Lag namn="Friends Arena" antalturneringar="1"/>
+</Resultat>
