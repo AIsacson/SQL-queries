@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
+
+<FotbollsTurnering>
+	<Arenor>
+		<Arena namn="Camp Nou" stad="Lund"/>
+		<Arena namn="FNB" stad="Köpenhamn"/>
+		<Arena namn="Wembley" stad="London"/>
+		<Arena namn="Olympiya" stad="Manchester"/>
+		<Arena namn="Friends Arena" stad="Stockholm"/>
+		<Arena namn="Hovet" stad="Johanneshov"/>
+	</Arenor>
+	<Turneringar>
+		<Turnering namn="Champions League"/>
+		<Turnering namn="TigerCupen"/>
+		<Turnering namn="FotbollsCupen"/>
+		<Turnering namn="LassaBollen"/>
+		<Turnering namn="KronborgCup"/>
+		<Turnering namn="TalangCupen"/>
+		<Turnering namn="JJCup"/>
+		<Turnering namn="The Great League"/>
+	</Turneringar>
+	<Lagen>
+		<Lag namn="FFG"/>
+		<Lag namn="RTF"/>
+		<Lag namn="JRT"/>
+		<Lag namn="ERF"/>
+		<Lag namn="SSE"/>
+	</Lagen>
+</FotbollsTurnering>
